@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+struct Diem {
+    float x;
+    float y;
+};
+
+void NhapDiem(Diem &d) {
+    printf("Nhap hoanh do x: ");
+    scanf("%f", &d.x);
+    printf("Nhap tung do y: ");
+    scanf("%f", &d.y);
+}
+
+void XuatDiem(Diem d) {
+    printf("Toa do diem la: (%.2f, %.2f)\n", d.x, d.y);
+}
+
+int main() {
+    Diem d;
+    NhapDiem(d);
+    printf("Diem vua nhap la: ");
+    XuatDiem(d);
+    return 0;
+}
